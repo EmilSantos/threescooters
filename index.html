@@ -3,73 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Three Scooters</title>
+    <title>Three Scooters - Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Impact&display=swap');
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: #f0f0f0; /* Light neutral gray background */
+        }
+        .navbar-orange {
+            background-color: orange;
+        }
+        .navbar-nav .nav-link {
+            font-size: 1.5rem; /* Increase font size */
+            font-weight: normal; /* Use Impact font */
+            font-family: 'Impact', sans-serif; /* Use Impact font */
+        }
+        .content {
+            flex: 1 0 auto;
+            background-color: #f0f0f0; /* Light neutral gray background */
+        }
+        .header {
+            background: url('headerimage.jpg') no-repeat center center;
+            background-size: cover;
+            height: 30vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+        .header-content h1 {
+            font-size: 3rem;
+        }
+        .header-content p {
+            font-size: 1.5rem;
+        }
+        footer {
+            background: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        .social-icons {
+            margin-bottom: 10px;
+        }
+        .social-icons a {
+            color: #000;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Three Scooters</a>
+<nav class="navbar navbar-expand-lg navbar-light navbar-orange">
+    <a class="navbar-brand" href="index.html">
+        <img src="threescootersimg.png" alt="Three Scooters" style="height: 80px;">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
+                <a class="nav-link" href="services.html">SERVICES</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#howto">How To</a>
+                <a class="nav-link" href="howto.html">HOW TO</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="contact.html">CONTACT</a>
             </li>
         </ul>
     </div>
 </nav>
-<div class="container mt-4">
-    <div id="home">
-        <h1>Home Page</h1>
-        <p>This is the home page content.</p>
-    </div>
-    <div id="about" class="d-none">
-        <h1>About Us</h1>
-        <p>This is the about page content.</p>
-    </div>
-    <div id="services" class="d-none">
-        <h1>Our Services</h1>
-        <p>This is the services page content.</p>
-    </div>
-    <div id="howto" class="d-none">
-        <h1>How To</h1>
-        <p>This is the how to page content.</p>
-    </div>
-    <div id="contact" class="d-none">
-        <h1>Contact Us</h1>
-        <p>This is the contact page content.</p>
+
+<!-- Main Content Wrapper -->
+<div class="content">
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1>Three Scooters</h1>
+            <p>Your #1 source for trade verification</p>
+            <a href="services.html" class="btn btn-primary">Verify Now</a>
+        </div>
+    </header>
+
+    <!-- Cards Section -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="AnthonyBrewer.png" class="card-img-top" alt="Card 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Anothony Brewer</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Atwater.png" class="card-img-top" alt="Card 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Atwater</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="wemby.png" class="card-img-top" alt="Card 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Wemby</h5>
+                        <p class="card-text">Some quick example text to build on the card</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
-<script>
-    $(document).ready(function(){
-        $('.nav-link').on('click', function(e){
-            e.preventDefault();
-            var target = $(this).attr('href').substring(1);
-            $('div.container > div').addClass('d-none');
-            $('#' + target).removeClass('d-none');
-            $('.nav-item').removeClass('active');
-            $(this).parent().addClass('active');
-        });
-    });
-</script>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 Three Scooters. All Rights Reserved.</p>
+    </div>
+</footer>
 </body>
 </html>
+
+
