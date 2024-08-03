@@ -5,81 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Three Scooters - Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Impact&display=swap');
-
-        html, body {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            background-color: #f0f0f0; /* Light neutral gray background */
-        }
-        .navbar-orange {
-            background-color: orange;
-        }
-        .navbar-nav .nav-link {
-            font-size: 1.5rem; /* Increase font size */
-            font-weight: normal; /* Use Impact font */
-            font-family: 'Impact', sans-serif; /* Use Impact font */
-        }
-        .content {
-            flex: 1 0 auto;
-            background-color: #f0f0f0; /* Light neutral gray background */
-        }
-        .header {
-            background: url('headerimage.jpg') no-repeat center center;
-            background-size: cover;
-            height: 30vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            position: relative;
-        }
-        .header-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-        }
-        .header-content {
-            position: relative;
-            z-index: 1;
-        }
-        .header-content h1 {
-            font-size: 3rem;
-        }
-        .header-content p {
-            font-size: 1.5rem;
-        }
-        footer {
-            background: #f8f9fa;
-            padding: 20px 0;
-            text-align: center;
-            flex-shrink: 0;
-        }
-        .social-icons {
-            margin-bottom: 10px;
-        }
-        .social-icons a {
-            color: #000;
-            margin: 0 10px;
-            font-size: 1.5rem;
-            text-decoration: none;
-        }
-    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #2edaff;">
+<nav class="navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="index.html">
         <img src="translogo.png" alt="Three Scooters" style="height: 80px;">
     </a>
@@ -115,45 +48,84 @@
         <div class="header-content">
             <h1>Three Scooters</h1>
             <p>Your #1 source for trade verification</p>
-            <a href="services.html" class="btn btn-primary">Verify Now</a>
+            <a href="services.html" class="btn btn-info-custom">Verify Now</a>
         </div>
     </header>
 
-    <!-- Cards Section -->
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="AnthonyBrewer.png" class="card-img-top" alt="Card 1">
+    <!-- Features Section -->
+    <section class="why-choose-us">
+        <div class="container section-spacing">
+            <h2 class="text-center mb-4 section-title">Why Choose Us?</h2>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 mb-3">
+                    <div class="custom-card">
+                        <h5>Trusted Trade Verification</h5>
+                        <p>We ensure the authenticity of online trades by acting as a reliable intermediary. Our process guarantees that both parties have a secure and scam-free transaction experience.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 mb-3">
+                    <div class="custom-card">
+                        <h5>Secure Transaction Process</h5>
+                        <p>Our service ensures that the seller sends the item and the buyer verifies its quality. Only after the buyer confirms, we facilitate the exchange of the item and payment, providing peace of mind for both parties.</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 mb-3">
+                <div class="custom-card">
+                    <h5>Your Trusted Source</h5>
+                    <p>We aim to become the go-to trusted source for secure online trading. By ensuring a seamless and safe transaction process, we build trust and reliability between buyers and sellers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="container section-spacing faq-spacing">
+        <h2 class="text-center mb-4 section-title">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="card">
+                <div class="card-header" id="faqHeadingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                            What is Three Scooters?
+                        </button>
+                    </h2>
+                </div>
+                <div id="faqCollapseOne" class="collapse show" aria-labelledby="faqHeadingOne" data-parent="#faqAccordion">
                     <div class="card-body">
-                        <h5 class="card-title">Anothony Brewer</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        Three Scooters is a trusted intermediary that ensures the authenticity of online trades, guaranteeing a secure and scam-free transaction experience for both parties.
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="Atwater.png" class="card-img-top" alt="Card 2">
+            <div class="card">
+                <div class="card-header" id="faqHeadingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                            How does the transaction process work?
+                        </button>
+                    </h2>
+                </div>
+                <div id="faqCollapseTwo" class="collapse" aria-labelledby="faqHeadingTwo" data-parent="#faqAccordion">
                     <div class="card-body">
-                        <h5 class="card-title">Atwater</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        The seller sends the item to Three Scooters. The buyer then verifies the item's quality. Once the buyer confirms, we facilitate the exchange of the item and payment, providing peace of mind for both parties.
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="wemby.png" class="card-img-top" alt="Card 3">
+            <div class="card">
+                <div class="card-header" id="faqHeadingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                            Why should I trust Three Scooters?
+                        </button>
+                    </h2>
+                </div>
+                <div id="faqCollapseThree" class="collapse" aria-labelledby="faqHeadingThree" data-parent="#faqAccordion">
                     <div class="card-body">
-                        <h5 class="card-title">Wemby</h5>
-                        <p class="card-text">Some quick example text to build on the card</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        We are committed to ensuring a secure and scam-free transaction process. Our reputation is built on trust, reliability, and a track record of satisfied clients who have successfully completed their trades through our platform.
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </div>
 
 <!-- Footer -->
@@ -163,8 +135,9 @@
             <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/yourchannel" target="_blank"><i class="fab fa-youtube"></i></a>
         </div>
-        <p>&copy; 2024 Three Scooters. All Rights Reserved.</p>
+        <p class="footer-text">&copy; 2024 Three Scooters. All Rights Reserved.</p>
     </div>
 </footer>
 </body>

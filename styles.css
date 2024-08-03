@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Impact&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0; /* Light neutral gray background */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+}
+.navbar-light {
+    background-color: #17a2b8;
+    color: #17a2b8; /* Updated color for text */
+}
+.navbar-nav .nav-link {
+    font-size: 1.2rem; /* Increase font size */
+    font-weight: 700; /* Bold font weight */
+}
+.content {
+    flex: 1 0 auto;
+    background-color: #f0f0f0; /* Light neutral gray background */
+}
+.header {
+    background: url('headerimage.jpg') no-repeat center center;
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+.header-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Impact', sans-serif;
+}
+.header-content p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+footer {
+    background: #000; /* Black background */
+    padding: 20px 0;
+    text-align: center;
+    flex-shrink: 0;
+    margin-top: 20px;
+}
+.social-icons {
+    margin-bottom: 10px;
+}
+.social-icons a {
+    color: white; /* Updated color for icons */
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.social-icons a:hover {
+    color: #007bff;
+}
+.footer-text {
+    color: #17a2b8; /* Updated color for text */
+    font-weight: 100; /* Bold font weight */
+}
+.accordion .btn-link {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+.accordion .btn-link:hover {
+    text-decoration: none;
+    color: #17a2b8; /* Updated color for text */
+}
+.section-spacing {
+    margin-top: 40px;
+}
+.faq-spacing {
+    margin-bottom: 40px;
+}
+.section-title {
+    font-size: 2.5rem; /* Increase font size */
+    font-family: 'Impact', sans-serif; /* Use Impact font */
+}
+.card-title {
+    font-weight: 700; /* Bold font weight */
+}
+.btn-info-custom {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: white;
+}
+.custom-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(01, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+.custom-card h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.custom-card p {
+    font-size: 1rem;
+    color: #777;
+}
+.why-choose-us {
+    background-color: white;
+    padding: 10px 10px 40px 10px;
+}
